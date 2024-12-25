@@ -1,6 +1,6 @@
 # Simulated Annealing
 
-This project contains an implementation of a local search algorithm, simulated, annealing on the N queens problem.
+This project contains an implementation of a local search algorithm, simulated annealing, on the N queens problem.
 
 ## What is Simulated Annealing?
 [Simulated annealing](https://en.wikipedia.org/wiki/Simulated_annealing) is a local search algorithm used for optimization problems.
