@@ -48,15 +48,7 @@ class SimulatedAnnealing:
 
         h_new: float = heuristic.evaluate(neighbour)
 
-        # print("Problem:")
-        # print(self.problem)
-        # print("Proposed neighbour:")
-        # print(neighbour)
-        # print(f"H_old: {h_old}, H_new: {h_new}")
-        # print(f"Temperature: {self.temp}")
-        p_accept = self.p_accept(h_old, h_new, temp, self.minimizing)
         if self.accept(h_old, h_new):
-            # print("Accepted!")
             self.problem = neighbour
         self.temp = schedule.cool(temp)
 
