@@ -102,7 +102,7 @@ class Queen(Variable):
 
 class NQueens(Problem):
     """
-    Class representing an instance of the n queens problem, to be solved by
+    Class representing an instance of the n queens problem to be solved by
     simulated annealing.
     """
     n: int
@@ -157,7 +157,7 @@ class NQueens(Problem):
     def __str__(self) -> str:
         """
         Method defining the string representation of the problem instance. Returning a
-        representation of the board with all queen placements.
+        representation of the board, with all queen placements.
         """
         str_: str = " " * 5 + "   ".join(ASCII[:self.n])
         str_ += "\n   ┌" + "───┬" * (self.n - 1) + "───┐"
@@ -182,7 +182,7 @@ class ThreatsHeuristic(Heuristic):
     @staticmethod
     def evaluate(problem: NQueens) -> int:
         """
-        Evaluation method returning evaluation score based on the number
+        Evaluation method returning an evaluation score based on the number
         of threats per queen.
 
         Args:
